@@ -7,7 +7,7 @@ const Profile = () => {
 	return (
 		<div>
 			<div>
-				<img className={s.bg} src='http://walldiskpaper.com/wp-content/uploads/2014/10/Sea-Wallpaper-Traveling-Holiday-Sea.jpg' />
+				<img className={s.bg} src='https://images.spasibovsem.ru/catalog/original/plyazh-nissi-beach-kipr-ajya-napa-otzyvy-1370722388.jpg' />
 			</div>
 			<div>
 				ava + description
