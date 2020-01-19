@@ -1,3 +1,5 @@
+import { renderEntireTree } from "../render";
+
 let state = {
   profilePage: {
     posts: [
@@ -26,6 +28,16 @@ let state = {
       { id: 3, name: 'dimuch', ava:'https://pbs.twimg.com/profile_images/1106202296801595392/99Ovyotd_400x400.jpg' },
     ]
   }
+}
+
+export let addPost = (postMessage) => {
+  let newPost = {
+  id: 4,
+    message: postMessage,
+    likesCount: 13
+  }
+  state.profilePage.posts.push(newPost);
+  renderEntireTree(state)
 }
 
 export default state;
