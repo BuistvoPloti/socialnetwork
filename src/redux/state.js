@@ -13,10 +13,17 @@ let state = {
       { id: 4, message: 'hru rn' }
     ],
     dialogs: [
-      { id: 1, name: 'oskar ezih' },
-      { id: 2, name: 'maksis zazinim' },
-      { id: 3, name: 'artem barabashkinzov' },
-      { id: 4, name: 'arbar2000bytkevuchys' }
+      { id: 1, name: 'oskar ezih', ava:'https://i.ytimg.com/vi/BNcxTNrtRdk/maxresdefault.jpg' },
+      { id: 2, name: 'maksis zazinim', ava:'https://i.ytimg.com/vi/BNcxTNrtRdk/maxresdefault.jpg' },
+      { id: 3, name: 'artem barabashkinzov', ava:'https://i.ytimg.com/vi/BNcxTNrtRdk/maxresdefault.jpg' },
+      { id: 4, name: 'arbar2000bytkevuchys', ava:'https://i.ytimg.com/vi/BNcxTNrtRdk/maxresdefault.jpg' }
+    ]
+  },
+  friends: {
+    topThreeFriends: [
+      { id: 1, name: 'sanya kakashnik', ava:'https://www.okino.ua/media/var/news/2018/10/04/venom.jpg' },
+      { id: 2, name: 'grigoriy libidko', ava:'https://www.vbetnews.com/wp-content/uploads/2020/01/EFBEaaSXYAMMIl2.jpg' },
+      { id: 3, name: 'dimuch', ava:'https://pbs.twimg.com/profile_images/1106202296801595392/99Ovyotd_400x400.jpg' },
     ]
   }
 }

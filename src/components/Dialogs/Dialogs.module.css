@@ -3,6 +3,12 @@
   grid-template-columns: 2fr 10fr;    
 }
 
+.ava {
+  width:60px;
+  height:60px;
+  border-radius: 50%;
+}
+
 .dialogsItems .dialog {
   padding: 10px;
   color: white;
