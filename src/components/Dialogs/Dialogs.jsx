@@ -2,16 +2,28 @@ import React from 'react';
 import s from './Dialogs.module.css'
 import DialogItem from './DialogItem/DialogItem';
 import Message from './Message/Message';
+import { updateNewPostActionCreator, sendMessageCreator, updateNewMessageBodyCreator } from '../../redux/state';
 
 const Dialogs = (props) => {
+
+  let state = props.store.getState().dialogsPage
+
   let dialogsElements =
-    props.state.dialogs.map(d => <DialogItem name={d.name} id={d.id} ava={d.ava} />)
+    state.dialogs.map(d => <DialogItem name={d.name} id={d.id} ava={d.ava} />)
   let messagesElements =
-    props.state.messages.map(m => <Message message={m.message} />)
-  let newMessageElement = React.createRef()
-  let addMessage = () => {
-    let text = newMessageElement.current.value
-    alert(text)
+    state.messages.map(m => <Message message={m.message} />)
+  let newMessageBody =
+    state.newMessageBody
+
+  //let newMessageElement = React.createRef()
+
+  let onSendMessageClick = () => {
+    props.store.dispatch(sendMessageCreator())
+  }
+
+  let onNewMessageChange = (e) => {
+    let body = e.target.value
+    props.store.dispatch(updateNewMessageBodyCreator(body))
   }
 
   return (
@@ -20,14 +32,22 @@ const Dialogs = (props) => {
         {dialogsElements}
       </div>
       <div className={s.messages}>
-        {messagesElements}
+        <div> {messagesElements} </div>
+        <div>
+          <div>
+          {/* ref={newMessageElement} nizhe bulo */}
+            <textarea className={s.messageTextArea} 
+                      value={newMessageBody} cols="80" rows="3"
+                      onChange={onNewMessageChange}>
+                      </textarea>
+          </div>
+          <div>
+            <button onClick={onSendMessageClick}>send message</button>
+          </div>
+        </div>
       </div>
-      <div>
-        <textarea className={s.messageTextArea} ref={newMessageElement} cols="30" rows="10"></textarea>
-      </div>
-      <div>
-        <button onClick={addMessage}>add new post</button>
-      </div>
+
+
     </div>
   )
 }
