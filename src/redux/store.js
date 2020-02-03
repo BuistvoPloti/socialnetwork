@@ -25,7 +25,7 @@ let store = {
       ],
       newMessageBody: '' 
     },
-    friends: {
+    sidebar: {
       topThreeFriends: [
         { id: 1, name: 'sanya kakashnik', ava:'https://www.okino.ua/media/var/news/2018/10/04/venom.jpg' },
         { id: 2, name: 'grigoriy libidko', ava:'https://www.vbetnews.com/wp-content/uploads/2020/01/EFBEaaSXYAMMIl2.jpg' },
@@ -46,7 +46,7 @@ let store = {
 
     this._state.profilePage = profileReducer(this._state.profilePage, action)
     this._state.dialogsPage = dialogsReducer(this._state.dialogsPage, action)
-    //this._state.topThreeFriends = profileReducer(this._state.topThreeFriends, action)
+    this._state.topThreeFriends = sidebarReducer(this._state.topThreeFriends, action)
     this._callSubscriber(this._state)
   }
 }
