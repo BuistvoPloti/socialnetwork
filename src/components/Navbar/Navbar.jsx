@@ -5,7 +5,7 @@ import TopFriends from './../topFriends/topFriends'
 
 const Navbar = (props) => {
   console.log(props)
-  let topThreeFriends = props.state.topThreeFriends.map(f => <TopFriends name={f.name} ava={f.ava} />)
+  //let topThreeFriends = props.state.topThreeFriends.map(f => <TopFriends name={f.name} ava={f.ava} />)
   return (
     <nav className={s.nav}>
       <div className={s.item}>
@@ -23,7 +23,7 @@ const Navbar = (props) => {
       <div className={s.item}>
         <NavLink to='/settings' activeClassName={s.activeLink}>Settings</NavLink>
       </div>
-      {topThreeFriends}
+      {/* {topThreeFriends} */}
     </nav>
   );
 }

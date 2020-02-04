@@ -14,14 +14,12 @@ const App = (props) => {
     <div className='app-wrapper'>
       <Header />
       {/* state={props.state.sidebar}  v navbar! nizhe*/}
-      <Navbar state={props.state.sidebar} />
+      <Navbar />
       <div className='app-wrapper-content'>
         <Route path='/profile'
-          render={() => <Profile
-            store={props.store} />} />
+          render={() => <Profile />} />
         <Route path='/dialogs'
-          render={() => <DialogsContainer
-            store={props.store} />} />
+          render={() => <DialogsContainer />} />
         <Route path='/news' component={News} />
         <Route path='/music' component={Music} />
         <Route path='/settings' component={Settings} />
