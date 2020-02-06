@@ -12,7 +12,7 @@ let store = {
     },
     dialogsPage: {
       messages: [
-        { id: 1, message: 'haro' },
+        { id: 1, message: 'haro' }, 
         { id: 2, message: 'priver' },
         { id: 3, message: 'okvha' },
         { id: 4, message: 'hru rn' }
