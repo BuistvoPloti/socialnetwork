@@ -22,6 +22,6 @@ const mapDispatchToProps = (dispatch) => {
 	}
 }
 
-const MyPostsContainer = connect(mapStateToProps, mapDispatchToProps)(MyPosts)
+const MyPostsContainer = connect(mapStateToProps, mapDispatchToProps)(MyPosts)  //may be refactor like in users container!
 
 export default MyPostsContainer;
