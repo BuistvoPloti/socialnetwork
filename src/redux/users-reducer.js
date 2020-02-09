@@ -82,5 +82,4 @@ export const setUsersTotalCountAC = (totalUsersCount) => {
   }
 }
 
-
 export default usersReducer
