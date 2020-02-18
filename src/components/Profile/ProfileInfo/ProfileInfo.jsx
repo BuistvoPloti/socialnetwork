@@ -17,7 +17,7 @@ const ProfileInfo = (props) => {
 				<img className={s.bg} src='https://images.spasibovsem.ru/catalog/original/plyazh-nissi-beach-kipr-ajya-napa-otzyvy-1370722388.jpg' />
 			</div>
 			<div className={s.descriptionBlock}>
-				<img src={props.profile.photos.large} alt=""/>
+				<img src={props.profile.photos.large ? props.profile.photos.large : userPhoto} alt=""/>
       </div>
 			<div>
 				{
