@@ -2,6 +2,7 @@ import React from 'react';
 import { addPostActionCreator, updateNewPostActionCreator } from '../../../redux/profile-reducer';
 import MyPosts from './MyPosts';
 import { connect } from 'react-redux';
+import {compose} from "redux"
 
 const mapStateToProps = (state) => {
 	return {
@@ -22,6 +23,6 @@ const mapDispatchToProps = (dispatch) => {
 	}
 }
 
-const MyPostsContainer = connect(mapStateToProps, mapDispatchToProps)(MyPosts)  //may be refactor like in users container!
-
-export default MyPostsContainer;
+export default compose(
+	connect(mapStateToProps, mapDispatchToProps)
+)(MyPosts)
