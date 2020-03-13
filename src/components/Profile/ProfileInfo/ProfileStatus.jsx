@@ -28,6 +28,14 @@ class ProfileStatus extends React.Component {
    })
   }
 
+  componentDidUpdate(prevProps, prevState, snapshot) {
+    if(prevProps.status != this.props.status) {
+      this.setState({
+        status: this.props.status
+      })
+    }
+  }
+
   render() {
     return (
       <div>
@@ -36,7 +44,7 @@ class ProfileStatus extends React.Component {
             <span onDoubleClick={this.activateEditMode}>{this.props.status || "empty status" }</span>
           </div>
         }
-        {this.state.editMode && 
+        {this.state.editMode &&
           <div>
             <input onChange={this.onStatusChange} autoFocus={true} onBlur={this.deactivateEditMode} value={this.state.status}/>
           </div>
