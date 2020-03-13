@@ -30,18 +30,19 @@ let Users = (props) => {
             <span>
               <div>
                 <NavLink to={'/profile/' + u.id}>
-                  <img src={u.photos.small != null ? u.photos.small : userPhoto} alt='' className={styles.userPhoto}/>
+                  <img src={u.photos.small != null ? u.photos.small : userPhoto} alt={u.id}
+                       className={styles.userPhoto}/>
                 </NavLink>
               </div>
               <div>
                 {u.followed
-                  ? <button disabled={props.followingInProgress
+                  ? <button title={u.id} disabled={props.followingInProgress
                     .some(id => id === u.id)}
                             onClick={() => {
                               props.unfollow(u.id)
                             }}>
                     Unfollow</button>
-                  : <button disabled={props.followingInProgress
+                  : <button title={u.id} disabled={props.followingInProgress
                     .some(id => id === u.id)}
                             onClick={() => {
                               props.follow(u.id)
