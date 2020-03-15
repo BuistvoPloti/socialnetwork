@@ -48,20 +48,6 @@ const mapStateToProps = (state) => {
   }
 }
 
-const mapDispatchToProps = (dispatch) => {
-  return {
-    follow: (userId) => {
-      dispatch(follow(userId))
-    },
-    unfollow: (userId) => {
-      dispatch(unfollow(userId))
-    },
-    setCurrentPage: (currentPage) => {
-      dispatch(setCurrentPage(currentPage))
-    }
-  }
-}
-
 let ob = {
   follow,
   unfollow,
@@ -71,7 +57,7 @@ let ob = {
 }
 
 export default compose(
-  connect(mapStateToProps, ob),
-  withAuthRedirect
+  connect(mapStateToProps, ob)//,
+  //withAuthRedirect
 )(UsersContainer)
 

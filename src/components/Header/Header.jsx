@@ -15,5 +15,5 @@ const Header = (props) => {
 		</header>
 	);
 }
-//21"33
+
 export default Header;
