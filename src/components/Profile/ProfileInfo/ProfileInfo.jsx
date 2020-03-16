@@ -4,6 +4,7 @@ import Preloader from "../../common/Preloader/Preloader"
 import userPhoto from "../../../assets/images/user.jpg"
 import styles from "../../Users/Users.module.css"
 import ProfileStatus from "./ProfileStatus"
+import ProfileStatusWithHooks from "./ProfileStatusWithHooks"
 
 const ProfileInfo = (props) => {
 
@@ -21,7 +22,7 @@ const ProfileInfo = (props) => {
 				<img src={props.profile.photos.large ? props.profile.photos.large : userPhoto} alt=""/>
       </div>
 
-			<ProfileStatus status={props.status} updateStatus={props.updateStatus}/>
+			<ProfileStatusWithHooks status={props.status} updateStatus={props.updateStatus}/>
 
 			<div>
 				{
