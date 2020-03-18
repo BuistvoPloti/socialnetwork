@@ -6,31 +6,27 @@ import styles from "../../Users/Users.module.css"
 import ProfileStatus from "./ProfileStatus"
 import ProfileStatusWithHooks from "./ProfileStatusWithHooks"
 
-const ProfileInfo = (props) => {
+const ProfileInfo = ({profile, status, updateStatus}) => {
 
-	if (!props.profile) {
-		return <Preloader/>
-	}
+  if (!profile) {
+    return <Preloader/>
+  }
 
-	return (
-		<div>
-			{/*<div>
-				<img className={s.bg} src='https://images.spasibovsem.ru/catalog/original/plyazh-nissi-beach-kipr-ajya-napa-otzyvy-1370722388.jpg' />
-			</div>
-			*/}
-			<div className={s.descriptionBlock}>
-				<img src={props.profile.photos.large ? props.profile.photos.large : userPhoto} alt=""/>
+  return (
+    <div>
+      <div className={s.descriptionBlock}>
+        <img src={profile.photos.large ? profile.photos.large : userPhoto} alt=""/>
       </div>
 
-			<ProfileStatusWithHooks status={props.status} updateStatus={props.updateStatus}/>
+      <ProfileStatusWithHooks status={status} updateStatus={updateStatus}/>
 
-			<div>
-				{
-					Object.entries(props.profile.contacts).map(([key, value]) => value ? <div>{key}: {value}</div> : null )
-				}
-			</div>
-		</div>
-	);
+      <div>
+        {
+          Object.entries(profile.contacts).map(([key, value]) => value ? <div>{key}: {value}</div> : null)
+        }
+      </div>
+    </div>
+  );
 }
 
 export default ProfileInfo;
