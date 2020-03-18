@@ -21,7 +21,7 @@ import {
 class UsersContainer extends React.Component {
 
   componentDidMount() {
-    const {currentPage,pageSize} = this.props
+    const {currentPage, pageSize} = this.props
     this.props.requestUsers(currentPage, pageSize)
   }
 
@@ -46,6 +46,17 @@ class UsersContainer extends React.Component {
   }
 }
 
+/*const mapStateToProps = (state) => {
+  return {
+    users: state.usersPage.users,
+    pageSize: state.usersPage.pageSize,
+    totalUsersCount: state.usersPage.totalUsersCount,
+    currentPage: state.usersPage.currentPage,
+    isFetching: state.usersPage.isFetching,
+    followingInProgress: state.usersPage.followingInProgress
+  }
+}*/
+
 const mapStateToProps = (state) => {
   return {
     users: getUsers(state),
@@ -57,9 +68,16 @@ const mapStateToProps = (state) => {
   }
 }
 
+let ob = {
+  follow,
+  unfollow,
+  setCurrentPage,
+  toggleFollowingProgress,
+  requestUsers
+}
+
 export default compose(
-  connect(mapStateToProps, follow, unfollow,
-    setCurrentPage, toggleFollowingProgress, requestUsers)
+  connect(mapStateToProps, ob)//,
   //withAuthRedirect
 )(UsersContainer)
 

@@ -23,6 +23,7 @@ let Users = ({
                                follow={props.follow}/>)
         }
       </div>
+
     </div>
   )
 }
