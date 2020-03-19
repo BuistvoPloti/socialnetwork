@@ -42,79 +42,76 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Jest.after deleting a post, posts length shouldnt be changed if id is incorrect">
-    <configuration name="added post should contain exact data" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Jest.callback should be called">
+    <configuration name="After creation input shouldnt be displayed" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
       <node-interpreter value="project" />
       <node-options value="" />
       <jest-package value="$PROJECT_DIR$/node_modules/react-scripts" />
       <working-dir value="$PROJECT_DIR$" />
       <envs />
-      <scope-kind value="TEST" />
-      <test-file value="$PROJECT_DIR$/src/redux/profile-reducer.test.js" />
+      <scope-kind value="SUITE" />
+      <test-file value="$PROJECT_DIR$/src/components/Profile/ProfileInfo/ProfileStatus.test.js" />
       <test-names>
-        <test-name value="added post should contain exact data" />
+        <test-name value="After creation input shouldnt be displayed" />
       </test-names>
       <method v="2" />
     </configuration>
-    <configuration name="after deleting a post, posts length shouldnt be changed if id is incorrect" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
+    <configuration name="ProfileStatus.test.js" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
       <node-interpreter value="project" />
       <node-options value="" />
       <jest-package value="$PROJECT_DIR$/node_modules/react-scripts" />
       <working-dir value="$PROJECT_DIR$" />
       <envs />
-      <scope-kind value="TEST" />
-      <test-file value="$PROJECT_DIR$/src/redux/profile-reducer.test.js" />
+      <scope-kind value="TEST_FILE" />
+      <test-file value="$PROJECT_DIR$/src/components/Profile/ProfileInfo/ProfileStatus.test.js" />
+      <method v="2" />
+    </configuration>
+    <configuration name="..sssssssss" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
+      <node-interpreter value="project" />
+      <node-options value="" />
+      <jest-package value="$PROJECT_DIR$/node_modules/react-scripts" />
+      <working-dir value="$PROJECT_DIR$" />
+      <envs />
+      <scope-kind value="SUITE" />
+      <test-file value="$PROJECT_DIR$/src/components/Profile/ProfileInfo/ProfileStatus.test.js" />
       <test-names>
-        <test-name value="after deleting a post, posts length shouldnt be changed if id is incorrect" />
+        <test-name value="..sssssssss" />
       </test-names>
       <method v="2" />
     </configuration>
-    <configuration name="after deleting length of posts must be decremented" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
+    <configuration name="callback should be called" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
       <node-interpreter value="project" />
       <node-options value="" />
       <jest-package value="$PROJECT_DIR$/node_modules/react-scripts" />
       <working-dir value="$PROJECT_DIR$" />
       <envs />
-      <scope-kind value="TEST" />
-      <test-file value="$PROJECT_DIR$/src/redux/profile-reducer.test.js" />
+      <scope-kind value="SUITE" />
+      <test-file value="$PROJECT_DIR$/src/components/Profile/ProfileInfo/ProfileStatus.test.js" />
       <test-names>
-        <test-name value="after deleting length of posts must be decremented" />
+        <test-name value="callback should be called" />
       </test-names>
       <method v="2" />
     </configuration>
-    <configuration name="length of postst should be incremented" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
+    <configuration name="input should be displayed in editMode instead of span" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
       <node-interpreter value="project" />
       <node-options value="" />
       <jest-package value="$PROJECT_DIR$/node_modules/react-scripts" />
       <working-dir value="$PROJECT_DIR$" />
       <envs />
-      <scope-kind value="TEST" />
-      <test-file value="$PROJECT_DIR$/src/redux/profile-reducer.test.js" />
+      <scope-kind value="SUITE" />
+      <test-file value="$PROJECT_DIR$/src/components/Profile/ProfileInfo/ProfileStatus.test.js" />
       <test-names>
-        <test-name value="length of postst should be incremented" />
-      </test-names>
-      <method v="2" />
-    </configuration>
-    <configuration name="renders learn react link" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
-      <node-interpreter value="project" />
-      <node-options value="" />
-      <jest-package value="$PROJECT_DIR$/node_modules/react-scripts" />
-      <working-dir value="$PROJECT_DIR$" />
-      <envs />
-      <scope-kind value="TEST" />
-      <test-file value="$PROJECT_DIR$/src/App.test.js" />
-      <test-names>
-        <test-name value="renders learn react link" />
+        <test-name value="input should be displayed in editMode instead of span" />
       </test-names>
       <method v="2" />
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Jest.after deleting a post, posts length shouldnt be changed if id is incorrect" />
-        <item itemvalue="Jest.after deleting length of posts must be decremented" />
-        <item itemvalue="Jest.added post should contain exact data" />
-        <item itemvalue="Jest.length of postst should be incremented" />
-        <item itemvalue="Jest.renders learn react link" />
+        <item itemvalue="Jest.callback should be called" />
+        <item itemvalue="Jest.input should be displayed in editMode instead of span" />
+        <item itemvalue="Jest...sssssssss" />
+        <item itemvalue="Jest.ProfileStatus.test.js" />
+        <item itemvalue="Jest.After creation input shouldnt be displayed" />
       </list>
     </recent_temporary>
   </component>
@@ -148,7 +145,8 @@
       <workItem from="1584346272044" duration="12537000" />
       <workItem from="1584371903173" duration="7116000" />
       <workItem from="1584429812228" duration="5331000" />
-      <workItem from="1584518568766" duration="11128000" />
+      <workItem from="1584518568766" duration="11235000" />
+      <workItem from="1584604182675" duration="5596000" />
     </task>
     <servers />
   </component>
