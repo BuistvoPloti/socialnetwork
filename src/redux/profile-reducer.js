@@ -102,6 +102,8 @@ export const saveProfile = (file) => async (dispatch, getState) => {
   let response = await profileAPI.saveProfile(file)
   if (response.data.resultCode === 0) {
     dispatch(getUserProfile(userId))
+  } else {
+    dispatch(stopSubmit....)
   }
 }
 

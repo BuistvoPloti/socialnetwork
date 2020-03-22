@@ -35,6 +35,7 @@ let User = ({user, followingInProgress, unfollow, follow, ...props}) => {
           <div>{user.status}</div>
         </span>
       </span>
+      <hr/>
     </div>
   )
 }

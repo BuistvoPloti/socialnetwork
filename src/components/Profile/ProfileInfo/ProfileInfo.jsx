@@ -51,13 +51,13 @@ const ProfileData = ({profile, isOwner, goToEditMode}) => {
         <b>Full name</b> : {profile.fullName}
       </div>
       <div>
-        <b>About me </b> : {profile.aboutMe || <b>anonymous</b>}
+        <b>About me </b> : {profile.aboutMe || 'Anonymous'}
       </div>
       <div>
         <b>Looking for a job</b> : {profile.lookingForAJob ? 'yes' : 'no'}
       </div>
       <div>
-        <b>Job description</b> : {profile.lookingForAJobDescription}
+        <b>Job description</b> : {profile.lookingForAJobDescription || 'No job description'}
       </div>
       <div>
         <b>Contacts</b>: <div className={s.contact}>{Object.entries(profile.contacts).map(([key, value]) => (
