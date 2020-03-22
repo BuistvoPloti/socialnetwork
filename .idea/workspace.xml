@@ -23,6 +23,7 @@
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.standard" value="" />
     <property name="nodejs.jest.jest_package" value="$PROJECT_DIR$/node_modules/react-scripts" />
+    <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.Console Font" />
   </component>
   <component name="RecentsManager">
@@ -70,19 +71,6 @@
       </test-names>
       <method v="2" />
     </configuration>
-    <configuration name="..sssssssss" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
-      <node-interpreter value="project" />
-      <node-options value="" />
-      <jest-package value="$PROJECT_DIR$/node_modules/react-scripts" />
-      <working-dir value="$PROJECT_DIR$" />
-      <envs />
-      <scope-kind value="SUITE" />
-      <test-file value="$PROJECT_DIR$/src/components/Profile/ProfileInfo/ProfileStatus.test.js" />
-      <test-names>
-        <test-name value="..sssssssss" />
-      </test-names>
-      <method v="2" />
-    </configuration>
     <configuration name="callback should be called" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
       <node-interpreter value="project" />
       <node-options value="" />
@@ -109,13 +97,23 @@
       </test-names>
       <method v="2" />
     </configuration>
+    <configuration name="deploy" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="deploy" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="npm.deploy" />
         <item itemvalue="Jest.Paginator component tests" />
         <item itemvalue="Jest.Paginator component tests.if pages count is more then 10 button NEXT should be present" />
         <item itemvalue="Jest.callback should be called" />
         <item itemvalue="Jest.input should be displayed in editMode instead of span" />
-        <item itemvalue="Jest...sssssssss" />
       </list>
     </recent_temporary>
   </component>
@@ -150,7 +148,8 @@
       <workItem from="1584371903173" duration="7116000" />
       <workItem from="1584429812228" duration="5331000" />
       <workItem from="1584518568766" duration="11235000" />
-      <workItem from="1584604182675" duration="10464000" />
+      <workItem from="1584604182675" duration="14162000" />
+      <workItem from="1584864662600" duration="14834000" />
     </task>
     <servers />
   </component>
